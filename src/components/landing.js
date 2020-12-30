@@ -1,37 +1,21 @@
 import React, { Component } from 'react';
-// import CharityList from './charityList';
+import charities from './list';
 import {Link } from "react-router-dom";
 
-const people = [
-    {
-      name: 'James',
-      age: 31,
-    },
-    {
-      name: 'John',
-      age: 45,
-    },
-    {
-      name: 'Paul',
-      age: 65,
-    },
-    {
-      name: 'Ringo',
-      age: 49,
-    },
-    {
-      name: 'George',
-      age: 34,
-    }
-  ];
 
 export class Landing extends Component {
     state={
-        value:'',
+        value:null,
         show:''
      }
      handleChange=(e)=>{
-        this.setState({value:e.target.value})
+
+        // this.setState({value:e.target.value})
+        
+         if(this.setState({value:e.target.value}) === ""){
+             this.setState({value:null})
+         } else{this.setState({value:e.target.value})}
+        
       }
     
     render() {
@@ -56,7 +40,7 @@ export class Landing extends Component {
 				</label>
         </div>
         <div>
-      {people.filter(person => person.age == this.state.value).map(filteredPerson => (
+      {charities.filter(person => person.name.match(this.state.value)).map(filteredPerson => (
         <li>
           {filteredPerson.name}
         </li>
@@ -67,3 +51,4 @@ export class Landing extends Component {
   }
 
 export default Landing;
+//person.name == this.state.value
