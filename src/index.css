@@ -1,8 +1,8 @@
 body {
     margin: 0px;
     padding: 0;
-    /* font-family: sans-serif; */
-  }
+    min-height: 100vh;
+    }
  
   @font-face {
     src: url(../public/housttely-signature-font/LovelyCoffee-jEVeO.ttf);
@@ -11,6 +11,10 @@ body {
   @font-face {
     src: url(../public/housttely-signature-font/BadScript-Regular.ttf);
     font-family: slogan;
+  }
+  @font-face {
+    src: url(../public/housttely-signature-font/Laila-Light.ttf);
+    font-family: para;
   }
 
 .charity {
@@ -68,4 +72,51 @@ body {
 	font-size: 15px;
 	color: #555;
 	right: 18px;
+}
+
+.head {
+  padding: 20px;
+  background-image: url('../public/depositphotos_13677711-stock-illustration-loving-hands-on-paper-background.jpg');
+  background-size: cover;
+  background-position: top;
+  
+  font-family: slogan;
+  font-size: 50px;
+  /* font-weight: lighter; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary{
+  padding: 5px;
+  /* margin-block-start: -1em; */
+  font-family: para;
+  font-size: 15px;
+  border: solid 3px rgb(236, 183, 83) ;
+  border-style: none solid solid;
+  border-radius: 0 0 8px 5px;
+  
+}
+
+.contact p{
+  margin: 0.4em;
+  font-family: slogan;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.contact a{
+  font-family: slogan;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  background-color: rgba(241, 174, 50, 0.795);
+  width: 200px;
+  align-items: center;
+  margin: auto;
+  border-radius: 6px;
+
 }

@@ -7,7 +7,7 @@ export class Profile extends Component {
     return (
       <div className="charProf">
         <div className="head" id="head" value={head}>
-          {head}
+          <p>{head}</p> 
         </div>
         <div className="summary">
           {charities
@@ -17,10 +17,11 @@ export class Profile extends Component {
             ))}
         </div>
         <div className="contact">
+            <p>More details on</p>
           {charities
             .filter((person) => person.name.match(head))
             .map((filteredPerson) => (
-              <p>{filteredPerson.contact}</p>
+              <a target="_blank" href={filteredPerson.contact} >{filteredPerson.name} Website</a>
             ))}
         </div>
       </div>

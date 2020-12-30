@@ -17,7 +17,7 @@ export class CharityList extends Component {
   render() {
     return (
       <div className="list">
-        <div className="head">Header</div>
+        <div className="header">Header</div>
         <div className="body">
           <ul>
             {charities.map((p) => (
