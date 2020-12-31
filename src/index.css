@@ -17,6 +17,7 @@ body {
     font-family: para;
   }
 
+/* Landing */
 .charity {
     background-image: url('../public/back3.jpg');
     background-size: cover;
@@ -47,7 +48,6 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-
 .search-label {
     /* position: relative; */
     padding: 20px;
@@ -62,9 +62,9 @@ body {
 	font-style: italic;
 	color: #444;
 	box-sizing: border-box;
-    outline: none;
-    border: none;
-    background-color: rgb(236, 183, 83);
+  outline: none;
+  border: none;
+  background-color: rgb(236, 183, 83);
 }
 .search-icon {
 	position: absolute;
@@ -74,18 +74,18 @@ body {
 	right: 18px;
 }
 
+/* Profile */
 .head {
-  padding: 20px;
+  padding: 10px;
   background-image: url('../public/depositphotos_13677711-stock-illustration-loving-hands-on-paper-background.jpg');
   background-size: cover;
-  background-position: top;
   
   font-family: slogan;
-  font-size: 50px;
-  /* font-weight: lighter; */
+  font-size: 35px;
+  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+
 }
 
 .summary{
@@ -114,9 +114,46 @@ body {
   text-decoration: none;
   color: black;
   background-color: rgba(241, 174, 50, 0.795);
-  width: 200px;
-  align-items: center;
+  width: 280px;
+  text-align: center;
   margin: auto;
   border-radius: 6px;
+  padding: 5px 0;
+}
 
+/* charityList */
+.list{
+  height: 100vh;
+  background-color:rgba(240, 177, 59, 0.199) ;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding: 10px; */
+  border: solid 3px rgb(236, 183, 83) ;
+  border-radius: 8px;
+  font-size: 40px;
+  font-family: slogan;
+}
+
+.content ul{
+  /* list-style-type: circle; */
+  color:darkorange;
+}
+.content ul li{
+  padding: 10px;
+  font-size: 20px;
+  font-family: para;
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  
+}
+.linked {
+  padding: 1px 12px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  width: fit-content;
+  border-radius: 8px;
 }

@@ -17,12 +17,12 @@ export class CharityList extends Component {
   render() {
     return (
       <div className="list">
-        <div className="header">Header</div>
-        <div className="body">
+        <div className="header">Charities</div>
+        <div className="content">
           <ul>
             {charities.map((p) => (
               <li key={p.id} value={p.name}>
-                <Link to="/Profile"  onClick={this.handleChange}>
+                <Link className="linked" to="/Profile"  onClick={this.handleChange}>
                   {p.name}
                 </Link>
               </li>
