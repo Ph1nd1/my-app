@@ -39,7 +39,7 @@ export class CharityList extends Component {
 
         <div className="content">
           <ul>
-            {charities.filter(person => person.name.toLowerCase().match(this.state.value)).map((p) => (
+            {charities.filter(person => person.name.toLowerCase().match(this.state.value.toLowerCase())).map((p) => (
               <li key={p.id} value={p.name}>
                 <Link className="linked" to="/Profile"  onClick={this.handleChange}>
                   {p.name}
