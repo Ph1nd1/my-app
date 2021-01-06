@@ -18,61 +18,48 @@ body {
   }
 
 /* Landing */
+.title {
+  padding: 20px;
+  font-size: 99px;
+  font-family: head;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan{
+  font-family: slogan;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .charity {
-    background-image: url('../public/back3.jpg');
+    background-image: url('../public/depositphotos_13677711-stock-illustration-loving-hands-on-paper-background.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
 .btnDiv {
-    /* margin: 10px; */
     padding: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 12px;
-    font-size: 16px; */
-
 }
 
 .btn {
-    padding: 5px 40px;
+    padding: 10px 40px;
     text-decoration: none;
-    border: none;
-    background-color: rgb(248, 174, 35);
-    font-family: slogan;
-    /* font-weight: 600; */
+    border: solid 3px rgb(255, 169, 10) ;
+    background-color: rgba(236, 182, 83, 0.767);
+    font-family: para;
 
     border-radius: 20px;
     font-size: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.603), 0 6px 20px 0 rgba(0, 0, 0, 0.541);
 }
 
-.search-label {
-    /* position: relative; */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.charity input {
-	/* width: 100%; */
-	padding: 16px;
-	font-size: 15px;
-	font-style: italic;
-	color: #444;
-	box-sizing: border-box;
-  outline: none;
-  border: none;
-  background-color: rgb(236, 183, 83);
-}
-.search-icon {
-	position: absolute;
-	/* top: -10px; */
-	font-size: 15px;
-	color: #555;
-	right: 18px;
-}
 
 /* Profile */
 .head {
@@ -90,7 +77,6 @@ body {
 
 .summary{
   padding: 5px;
-  /* margin-block-start: -1em; */
   font-family: para;
   font-size: 15px;
   border: solid 3px rgb(236, 183, 83) ;
@@ -131,23 +117,19 @@ body {
   justify-content: center;
   align-items: center;
 
-  /* padding: 10px; */
   border: solid 3px rgb(236, 183, 83) ;
   border-radius: 8px;
-  font-size: 40px;
+  font-size: 30px;
   font-family: slogan;
 }
 
 .content ul{
-  /* list-style-type: circle; */
   color:darkorange;
 }
 .content ul li{
   padding: 10px;
   font-size: 20px;
-  font-family: para;
-  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
-  
+  font-family: para; 
 }
 .linked {
   padding: 1px 12px;
@@ -156,4 +138,29 @@ body {
   box-shadow: 0 2px 3px rgba(0,0,0,0.2);
   width: fit-content;
   border-radius: 8px;
+}
+
+
+.search-label {
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.list input {
+padding: 16px;
+font-size: 15px;
+font-style: italic;
+color: #444;
+box-sizing: border-box;
+outline: none;
+border: none;
+background-color: rgb(236, 183, 83);
+}
+.search-icon {
+position: absolute;
+font-size: 15px;
+color: #555;
+right: 18px;
 }
