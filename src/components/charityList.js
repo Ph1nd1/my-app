@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import charities from "./list";
 
 let head = "";
+// let provinces = ['Eastern Cape','Free State','Gauteng','KwaZulu-Natal','Limpopo','Mpumalanga','Northern Cape','North West','Western Cape'];
 
 export class CharityList extends Component {
   state = {
@@ -19,6 +20,11 @@ export class CharityList extends Component {
     this.setState({value:e.target.value});
 
   }
+  // handleChange3=(e)=>{
+  //   this.setState({value:e.value});
+  //   let k = e.value;
+  //   console.log(k);
+  // }
 
   render() {
     return (
@@ -37,6 +43,16 @@ export class CharityList extends Component {
 				</label>
         </div>
 
+        {/* <div className="dropdown">
+          <select >
+            {provinces.map(loc => (
+              <option value={loc} onChange={this.handleChange3}>
+                {loc}
+              </option>
+            ))}
+          </select>
+        </div> */}
+
         <div className="content">
           <ul>
             {charities.filter(person => person.name.toLowerCase().match(this.state.value.toLowerCase())).map((p) => (
@@ -48,6 +64,7 @@ export class CharityList extends Component {
             ))}
           </ul>
         </div>
+
       </div>
     );
   }

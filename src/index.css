@@ -5,15 +5,15 @@ body {
     }
  
   @font-face {
-    src: url(../public/housttely-signature-font/LovelyCoffee-jEVeO.ttf);
+    src: url(../public/fonts/LovelyCoffee-jEVeO.ttf);
     font-family: head;
   }
   @font-face {
-    src: url(../public/housttely-signature-font/BadScript-Regular.ttf);
+    src: url(../public/fonts/BadScript-Regular.ttf);
     font-family: slogan;
   }
   @font-face {
-    src: url(../public/housttely-signature-font/Laila-Light.ttf);
+    src: url(../public/fonts/Laila-Light.ttf);
     font-family: para;
   }
 
@@ -143,13 +143,15 @@ body {
 
 .search-label {
   padding: 20px 20px 0px 20px;
+  /* width: px; */
   display: flex;
   justify-content: center;
   align-items: center;
   
 }
 .list input {
-padding: 16px;
+padding: 10px;
+width: 100%;
 font-size: 15px;
 font-style: italic;
 color: #444;

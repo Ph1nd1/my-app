@@ -3,22 +3,6 @@ import React, { Component } from 'react';
 import {Link } from "react-router-dom";
 
 export class Landing extends Component {
-    // state={
-    //     value:'',
-    //     show:''
-    //  }
-
-     
-    //  handleChange=(e)=>{
-
-    //     // this.setState({value:e.target.value})
-        
-    //      if(this.setState({value:e.target.value}) === ""){
-    //          this.setState({value:null})
-    //      } else{this.setState({value:e.target.value})}
-        
-    //   }
-    
     render() {
 
       return (
@@ -35,4 +19,3 @@ export class Landing extends Component {
   }
 
 export default Landing;
-//person.name == this.state.value
