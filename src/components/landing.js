@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import charities from './list';
 import {Link } from "react-router-dom";
 
 export class Landing extends Component {
