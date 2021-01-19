@@ -17,11 +17,11 @@ export class Profile extends Component {
             ))}
         </div>
         <div className="contact">
-              <p>More Way to help</p>
+              <p>Ways to help</p>
           {charities
             .filter((person) => person.name.match(head))
             .map((filteredPerson) => (
-              <a target="_blank" href={filteredPerson.contact} >lend a hand</a>
+              <a target="_blank" href={filteredPerson.contact} >Lend a hand</a>
             ))}
         </div>
         <br/>
