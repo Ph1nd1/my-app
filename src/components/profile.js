@@ -17,11 +17,19 @@ export class Profile extends Component {
             ))}
         </div>
         <div className="contact">
-            <p>More details on</p>
+            <p>Ways to help out</p>
+            {charities
+            .filter((person) => person.name.match(head))
+            .map((filteredPerson) => (
+              <a target="_blank" href={filteredPerson.contact} >Lend a hand</a>
+            ))}
+        </div>
+        <br/>
+        <div className="contact">
           {charities
             .filter((person) => person.name.match(head))
             .map((filteredPerson) => (
-              <a target="_blank" href={filteredPerson.contact} >{filteredPerson.name} Website</a>
+              <a target="_blank" href={filteredPerson.donate} >Donate</a>
             ))}
         </div>
       </div>
