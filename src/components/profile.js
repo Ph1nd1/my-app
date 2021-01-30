@@ -17,8 +17,8 @@ export class Profile extends Component {
             ))}
         </div>
         <div className="contact">
-            <p>Ways to help out</p>
-            {charities
+              <p>Ways to help</p>
+          {charities
             .filter((person) => person.name.match(head))
             .map((filteredPerson) => (
               <a target="_blank" href={filteredPerson.contact} >Lend a hand</a>

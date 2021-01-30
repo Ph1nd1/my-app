@@ -141,5 +141,5 @@ const charities = [
   }
 ];
 
-// charities.sort((a, b) => a.name - b.name);
+
 export default charities;
