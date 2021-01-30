@@ -13,6 +13,12 @@ export class Landing extends Component {
                 <button className="btn" variant="warning">Find a Charity</button>
             </Link> 
         </div> 
+
+        <div className="btnDiv2">
+            <Link to="/Causes">
+                <button className="btn" variant="warning">Find a Cause</button>
+            </Link> 
+        </div> 
       </div>)
     }
   }
