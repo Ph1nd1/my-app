@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import charities from "./list";
-let causeArray = ['Refuge Charities', 'Education Charities', 'Shelter and Homeless Services', 'Food Banks, Food Pantries and Food Distribution','Health Charities', 'Arts, Culture and Humanities Charities' ];
+
+let causeArray = ['Refuge Charities', 'Education Charities', 'Shelter and Homeless Services', 'Food Distribution','Health Charities', 'Arts, Culture and Humanities Charities' ];
 let thisCause = '';
 
 export class Causes extends Component {
@@ -24,7 +24,7 @@ export class Causes extends Component {
           <ul>
             { causeArray.map((p) => (
               <li key={p} value={p}>
-                <Link className="linked" to="/Profile"  onClick={this.handleChange}>
+                <Link className="linked" to="/CauseProfile"  onClick={this.handleChange}>
                   {p}
                 </Link>
               </li>

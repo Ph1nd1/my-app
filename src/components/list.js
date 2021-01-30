@@ -61,7 +61,7 @@ const charities = [
     contact: 'https://www.hopeinsouthafrica.org/contact',
     donate : 'https://donorbox.org/holiday-christmas-blessings-campaign-2020',
     location: `Nothern Cape`,
-    cause: 'Food Banks, Food Pantries and Food Distribution'
+    cause: 'Food Distribution'
   },
   {
     name: 'CANSA Cancer Association of South Africa Upington',
@@ -101,7 +101,7 @@ const charities = [
     contact: 'http://visionoflove.org.za/contact.html',
     donate: 'http://visionoflove.org.za/support.html',
     location: `Limpopo`,
-    cause: 'Food Banks, Food Pantries and Food Distribution'
+    cause: 'Food Distribution'
   },
   {
     name: 'Thohoyandou Victim Empowerment Programme',

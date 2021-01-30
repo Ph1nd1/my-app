@@ -17,7 +17,6 @@ export class CharityList extends Component {
 
  handleChange2=(e)=>{
     this.setState({value:e.target.value});
-
   }
 
   render() {
@@ -26,7 +25,7 @@ export class CharityList extends Component {
         <div className="header">Charities</div>
 
         <div className="search">
-            {/*Search Input*/}
+
 				<label className="search-label" htmlFor="search-input">
 					<input
 						type="text"

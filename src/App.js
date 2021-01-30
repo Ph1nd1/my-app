@@ -6,7 +6,6 @@ import CharityList from "./components/charityList";
 import Profile from "./components/profile";
 import Causes from "./components/causes";
 import CauseProfile from "./components/causeProfile";
-// import './App.css';, { Component }
 
 function App() {
   return (
