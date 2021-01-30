@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0;
   min-height: 100vh;
-  }
+}
 
 @font-face {
   src: url(../public/fonts/LovelyCoffee-jEVeO.ttf);
@@ -19,24 +19,24 @@ body {
 
 /* Landing */
 .title {
-padding: 20px;
-font-size: 99px;
-font-family: head;
-display: flex;
-justify-content: center;
-align-items: center;
+  padding: 20px;
+  font-size: 99px;
+  font-family: head;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slogan{
-font-family: slogan;
-font-size: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
+.slogan {
+  font-family: slogan;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .charity {
-  background-image: url('../public/depositphotos_13677711-stock-illustration-loving-hands-on-paper-background.jpg');
+  background-image: url("../public/depositphotos_13677711-stock-illustration-loving-hands-on-paper-background.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -51,118 +51,119 @@ align-items: center;
 .btn {
   padding: 10px 40px;
   text-decoration: none;
-  border: solid 3px rgb(255, 169, 10) ;
+  border: solid 3px rgb(255, 169, 10);
   background-color: rgba(236, 182, 83, 0.767);
   font-family: para;
 
   border-radius: 20px;
   font-size: 20px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.603), 0 6px 20px 0 rgba(0, 0, 0, 0.541);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.603),
+    0 6px 20px 0 rgba(0, 0, 0, 0.541);
 }
-
 
 /* Profile */
 .head {
-padding: 10px;
-background-image: url('../public/depositphotos_13677711-stock-illustration-loving-hands-on-paper-background.jpg');
-background-size: cover;
+  padding: 10px;
+  background-image: url("../public/depositphotos_13677711-stock-illustration-loving-hands-on-paper-background.jpg");
+  background-size: cover;
 
-font-family: slogan;
-font-size: 35px;
-text-align: center;
-display: flex;
-justify-content: center;
-
+  font-family: slogan;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.summary{
-padding: 5px;
-font-family: para;
-font-size: 15px;
-border: solid 3px rgb(236, 183, 83) ;
-border-style: none solid solid;
-border-radius: 0 0 8px 5px;
-
+.summary {
+  padding: 5px;
+  font-family: para;
+  font-size: 15px;
+  border: solid 3px rgb(236, 183, 83);
+  border-style: none solid solid;
+  border-radius: 0 0 8px 5px;
 }
-
-.contact p{
-margin: 0.4em;
-font-family: slogan;
-font-size: 20px;
-display: flex;
-justify-content: center;
+.contact {
+  display: flex;
+  justify-content: center;
 }
-.contact a{
-font-family: slogan;
-font-size: 20px;
-display: flex;
-justify-content: center;
-text-decoration: none;
-color: black;
-background-color: rgba(241, 174, 50, 0.795);
-width: 280px;
-text-align: center;
-margin: auto;
-border-radius: 6px;
-padding: 5px 0;
+.contact p {
+  margin: 0.4em;
+  font-family: slogan;
+  font-size: 25px;
+}
+.contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  width: 200px;
+
+  padding: 10px 30px;
+  text-decoration: none;
+  border: solid 3px rgb(255, 169, 10);
+  background-color: rgba(236, 182, 83, 0.678);
+  font-family: para;
+
+  border-radius: 20px;
+  font-size: 20px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.603),
+    0 6px 15px 0 rgba(0, 0, 0, 0.541);
 }
 
 /* charityList */
-.list{
-height: 210vh;
-background-color:rgba(240, 177, 59, 0.199) ;
+.list {
+  height: 210vh;
+  background-color: rgba(240, 177, 59, 0.199);
 }
-.header{
-display: flex;
-justify-content: center;
-align-items: center;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-border: solid 3px rgb(236, 183, 83) ;
-border-radius: 8px;
-font-size: 30px;
-font-family: slogan;
+  border: solid 3px rgb(236, 183, 83);
+  border-radius: 8px;
+  font-size: 30px;
+  font-family: slogan;
 }
 
-.content ul{
-color:darkorange;
+.content ul {
+  color: darkorange;
 }
-.content ul li{
-padding: 10px;
-font-size: 20px;
-font-family: para; 
+.content ul li {
+  padding: 10px;
+  font-size: 20px;
+  font-family: para;
 }
 .linked {
-padding: 1px 12px;
-text-decoration: none;
-color: black;
-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
-width: fit-content;
-border-radius: 8px;
+  padding: 1px 12px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  border-radius: 8px;
 }
-
 
 .search-label {
-padding: 20px 20px 0px 20px;
-/* width: px; */
-display: flex;
-justify-content: center;
-align-items: center;
-
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .list input {
-padding: 10px;
-width: 100%;
-font-size: 15px;
-font-style: italic;
-color: #444;
-box-sizing: border-box;
-outline: none;
-border: none;
-background-color: rgb(236, 183, 83);
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  font-style: italic;
+  color: #444;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  background-color: rgb(236, 183, 83);
 }
 .search-icon {
-position: absolute;
-font-size: 15px;
-color: #555;
-right: 18px;
+  position: absolute;
+  font-size: 15px;
+  color: #555;
+  right: 18px;
 }
