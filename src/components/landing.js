@@ -19,6 +19,8 @@ export class Landing extends Component {
                 <button className="btn" variant="warning">Find a Cause</button>
             </Link> 
         </div> 
+
+        <div className="footer">Giving Needs - South Africa</div>
       </div>)
     }
   }
