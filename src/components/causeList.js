@@ -4,7 +4,7 @@ import charities from "./list";
 import { thisCause } from "./causes";
 
 let causeHead = '';
-export class CauseProfile extends Component {
+export class CauseList extends Component {
     state = {
         value: "",
         show:''
@@ -26,7 +26,7 @@ export class CauseProfile extends Component {
             .filter((person) => person.cause.match(thisCause))
             .map((filteredPerson) => (
                 <li key={filteredPerson.id} value={filteredPerson.name}>
-                <Link className="linked" to="/Profile" onClick={this.handleChange}>
+                <Link className="linked" to="/CauseProf" onClick={this.handleChange}>
                   {filteredPerson.name}
                 </Link>
             </li>
@@ -39,5 +39,5 @@ export class CauseProfile extends Component {
     }
   }
   
-  export default CauseProfile;
+  export default CauseList;
   export { causeHead };

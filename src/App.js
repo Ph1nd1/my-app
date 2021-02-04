@@ -5,7 +5,9 @@ import Landing from "./components/landing";
 import CharityList from "./components/charityList";
 import Profile from "./components/profile";
 import Causes from "./components/causes";
-import CauseProfile from "./components/causeProfile";
+import CauseList from "./components/causeList";
+import CauseProf from "./components/causeProf";
+
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Route path="/Charities" component={CharityList} />
         <Route path="/Profile" component={Profile} />
         <Route path="/Causes" component={Causes} />
-        <Route path="/CauseProfile" component={CauseProfile} />
+        <Route path="/CauseList" component={CauseList} />
+        <Route path="/CauseProf" component={CauseProf} />
       </Switch>
     </BrowserRouter>
   );

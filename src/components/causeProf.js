@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import { head } from "./charityList";
+import { causeHead } from "./causeList";
 import charities from "./list";
 
-export class Profile extends Component {
+export class CauseProf extends Component {
   render() {
     return (
       <div className="charProf">
-        <div className="head" id="head" value={head}>
-          <p>{head}</p> 
+        <div className="head" id="head" value={causeHead}>
+          <p>{causeHead}</p> 
         </div>
         <div className="summary">
           {charities
-            .filter((person) => person.name.match(head))
+            .filter((person) => person.name.match(causeHead))
             .map((filteredPerson) => (
               <p>{filteredPerson.summary}</p>
             ))}
@@ -19,7 +19,7 @@ export class Profile extends Component {
         <div className="contact"><p>Ways to help</p></div>
         <div className="contact">
           {charities
-            .filter((person) => person.name.match(head))
+            .filter((person) => person.name.match(causeHead))
             .map((filteredPerson) => (
               <a target="_blank" href={filteredPerson.contact} >Lend a hand</a>
             ))}
@@ -27,7 +27,7 @@ export class Profile extends Component {
         <br/>
         <div className="contact">
           {charities
-            .filter((person) => person.name.match(head))
+            .filter((person) => person.name.match(causeHead))
             .map((filteredPerson) => (
               <a target="_blank" href={filteredPerson.donate} >Donate</a>
             ))}
@@ -37,4 +37,4 @@ export class Profile extends Component {
   }
 }
 
-export default Profile;
+export default CauseProf;

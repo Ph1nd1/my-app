@@ -24,7 +24,7 @@ export class Causes extends Component {
           <ul>
             { causeArray.map((p) => (
               <li key={p} value={p}>
-                <Link className="linked" to="/CauseProfile"  onClick={this.handleChange}>
+                <Link className="linked" to="/CauseList"  onClick={this.handleChange}>
                   {p}
                 </Link>
               </li>
